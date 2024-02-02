@@ -1,5 +1,4 @@
-FROM docker:stable
+FROM docker:cli
 
 RUN apk update
-RUN apk add --no-cache python3 py-pip curl
-RUN pip install --no-cache-dir awscli
+RUN apk add --no-cache curl aws-cli
